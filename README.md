@@ -18,13 +18,18 @@ Add a script in `package.json`:
 ```
 
 ### Thrift IDL
-Create a folder called `thrift` at project root.  
-Put Thrift IDL file in the new folder.
+The Thrift IDL file locates in the `thrift` folder.
 * The demo IDL has a `getUserInfo` method which returns users name and email.
 
-Run `npm run codegen`. It will read the IDL in `./thrift` and create Thrift related files in `./src/codegen`  
+### Codegen
+```sh
+$ npm run codegen
+```
+It will read the IDL in `./thrift` and create Thrift related files in `./src/codegen`  
 
-### Create a Thrift service
-create a new folder `./src/services`  
-create a new file called 'thrift.ts'  
+### Start
 
+```sh
+$ npm start
+```
+Visit `localhost:3000`
